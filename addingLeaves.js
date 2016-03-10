@@ -99,17 +99,11 @@ var sumLeaves = function(obj) {
 }
 
 
-
-
-
-
-
-
 var sumLeaves = function(obj) {
 	var path = "";
 	var sum = 0; 
 	var subroutine = function (node, currentpath) {
-		if(node.children.length===0) {
+		if(node.children.length) {
 			path += node.value;
 			sum += Number(path); 
 			path = path.substring(0, path.length-1);
