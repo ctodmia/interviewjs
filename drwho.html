@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dr. Who</title>
+</head>
+<body>
+	<ul id="list">
+		
+	</ul>
+
+<script type="text/javascript">
+(function() {
+	var c = document.cookie = 'name=carine'
+	var elem
+	var word;
+
+// var drWho = function () {
+	for (var i=10; i<=100; i++) {
+		
+		if(i%4 === 0 && i%6 !== 0) {
+			elem = document.createElement("LI");
+			word = document.createTextNode('Dr.');
+			elem.appendChild(word);
+			document.getElementById('list').appendChild(elem);
+		}
+		if(i%6 === 0) {
+			elem = document.createElement("LI");
+			word = document.createTextNode('Who');
+			elem.appendChild(word);
+			document.getElementById('list').appendChild(elem);
+		} 
+		if(i%4 === 0) {
+			elem = document.createElement("LI");
+			word = document.createTextNode('Dr. Who');
+			elem.appendChild(word);
+			document.getElementById('list').appendChild(elem);
+		} 
+		if(i%4 !== 0 && i%6 !== 0) {
+			elem = document.createElement("LI");
+			word = document.createTextNode(i);
+			elem.appendChild(word);
+				document.getElementById('list').appendChild(elem);
+		}
+		
+	}
+// }
+
+
+})();
+	
+
+</script>
+</body>
+</html>

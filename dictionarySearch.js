@@ -23,3 +23,12 @@ var wordFind = function (word, dictionary) {
 	
 var list = ['FooBar', 'AnotherUser', 'OtherDatastoreType', 'FoooooBar', 'FBaaaaaar'];
 wordFind('FB', list); // ['FooBar', 'FoooooBar', 'FBaaaaar']
+
+var wordFind = function (word, dictionary) {
+	var results = []
+	found;
+
+	var subroutine = function () {
+		
+	}
+}
